@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinguaFilm — учим язык по фильмам</title>
+    <title>LinguaFilm — Библиотека</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,22 +11,16 @@
         <div class="logo">LinguaFilm</div>
         <nav class="nav">
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="library.html">Библиотека</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="library.html" class="active">Библиотека</a></li>
                 <li><a href="profile.html">Профиль</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section id="home" class="hero">
-            <h1>Учи язык через кино и мультфильмы!</h1>
-            <p>Смотрите фрагменты, повторяйте фразы, улучшайте понимание на слух.</p>
-            <button id="startButton">Начать обучение</button>
-        </section>
-
         <section id="library" class="library">
-            <h2>Библиотека фрагментов</h2>
+            <h1>Библиотека фрагментов</h1>
             <div class="filter">
                 <label>Уровень:
                     <select id="levelFilter">
@@ -47,23 +41,13 @@
             </div>
             <div id="clipsContainer" class="clips"></div>
         </section>
-
-        <section id="player" class="player hidden">
-            <div class="video-container">
-                <video id="clipVideo" controls></video>
-            </div>
-            <div class="transcript">
-                <h3>Транскрипция и перевод</h3>
-                <ul id="transcriptList"></ul>
-            </div>
-            <button id="closePlayer">Закрыть</button>
-        </section>
     </main>
 
     <footer class="footer">
         <p>&copy; 2026 LinguaFilm. Все права защищены.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script_library.js"></script>
+
 </body>
 </html>
